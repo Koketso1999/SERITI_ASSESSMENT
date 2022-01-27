@@ -1,15 +1,31 @@
 import styled from "styled-components";
 
 export const LoginContainer = styled.div`
-  height: 100vh;
+  height: 100%;
+  min-height:100vh;
   background: linear-gradient(180deg, #1c9181 50%, #f2f2f2 50%);
+  padding:0;
+
+ 
 `;
 
 export const LoginContent = styled.div`
-  width: 24vw;
+
+
+position:absolute;
+margin-top:-150px;
+margin-left:-200px;
+top:50%;
+left:50%;
+
+background-color: #f9f9f9;
+padding: 50px;
+width: 24vw;
+  height: 50vh;
+/*  
+ width: 24vw;
   height: 50vh;
   background-color: #f9f9f9;
-  /* Center vertically and horizontally */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,7 +33,7 @@ export const LoginContent = styled.div`
   padding: 50px;
   box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
   -webkit-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
-  -moz-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54); */
 `;
 
 export const LoginHeading = styled.h1`
@@ -39,7 +55,7 @@ export const LoginBox = styled.div`
 export const TopMessage = styled.h2`
     text-align: center;
     margin:16px 0;
-    font-size: 2em;
+    font-size: 24px;
     /* justify-content: space-between; */
     /* display:inline; */
 `;
@@ -76,8 +92,10 @@ export const StyledInput = styled.input`
   border: 2px solid #b9bdba;
   padding: 12px;
   font-size: 18px;
+  box-sizing: border-box;
 `;
 export const StyledInputCheckbox = styled.input`
+box-sizing: border-box;
 /* display:inline;   */
 /* outline: 2px solid #434a48; */
 
@@ -133,10 +151,10 @@ export const StyledButton = styled.button`
   color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 1.2em;
+  font-size: 18px;
   padding: 12px;
   border-radius: 3px;
-
+  box-sizing: border-box;
 
   font-weight:700;
 /* font-size:18px; */
