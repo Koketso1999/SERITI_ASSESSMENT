@@ -1,9 +1,14 @@
 import React from 'react';
+import LoginScreen from '../Components/LoginScreen/LoginScreen';
+
 
 const Login = () => {
-  return <div>
-      
-  </div>;
+  
+  console.log('Login.js')
+  return <>
+  
+      <LoginScreen />
+  </>;
 };
 
 export default Login;
