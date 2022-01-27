@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const TopContainer = styled.section`
- 
-
+display: flex;
+align-items: center;
+padding: 20px 25px;
+border-style: solid;
 `;
 export const SideContainer = styled.section`
  background-color: #f2f2f2;

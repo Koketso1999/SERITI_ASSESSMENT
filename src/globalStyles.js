@@ -9,7 +9,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
    } 
 
-
+   html,
+   body {
+     height: 100%;
+   }
 
 
   `;
