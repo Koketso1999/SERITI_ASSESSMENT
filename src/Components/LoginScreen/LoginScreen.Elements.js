@@ -101,23 +101,16 @@ export const StyledInput = styled.input`
   width: 100%;
   height: 46px;
   border-radius: 6px;
-  /* border-color:#b9bdba; */
   border: 2px solid #b9bdba;
   padding: 12px;
   font-size: 18px;
   box-sizing: border-box;
 `;
 export const StyledInputCheckbox = styled.input`
-box-sizing: border-box;
-/* display:inline;   */
-/* outline: 2px solid #434a48; */
-
-/* border: 2px solid #bcbcbc;
-  border-radius: 2px; */
   cursor: pointer;
 
 
-  width: 1.15em;
+  width: 1.5em;
   height: 1.15em;
   border: 0.15em solid #bcbcbc;
   border-radius: 0.15em;
@@ -125,8 +118,6 @@ box-sizing: border-box;
 
 export const StyledLink = styled.a`
   color: #1c9181;
-  /* position: relative; */
-/* display:inline; */
 font-weight:600;
 font-size:18px;
 `;
@@ -138,17 +129,6 @@ color:#434a48;
 margin: 16px 0;
 `;
 export const Group = styled.div`
-    /* width:100%;
-    display:inline-block; */
-
-/* 
-    display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-  align-content: start;
-  padding:10px;; */
 
   display: flex;
   flex-wrap: wrap;
@@ -163,13 +143,10 @@ export const StyledButton = styled.button`
   background-color: #1c9181;
   color: #fff;
   border: none;
-  border-radius: 6px;
   font-size: 18px;
   padding: 12px;
   border-radius: 3px;
   box-sizing: border-box;
-
   font-weight:700;
-/* font-size:18px; */
 margin: 14px 0;
 `;
