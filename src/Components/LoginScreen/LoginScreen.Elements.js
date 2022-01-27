@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const LoginContainer = styled.div`
-  height: 100%;
-  min-height:100vh;
+  height: 100vh;
+  /* min-height:100vh; */
   background: linear-gradient(180deg, #1c9181 50%, #f2f2f2 50%);
   padding:0;
 
