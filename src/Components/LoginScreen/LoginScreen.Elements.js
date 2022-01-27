@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const LoginContainer = styled.div`
   height: 100vh;
-  /* min-height:100vh; */
   background: linear-gradient(180deg, #1c9181 50%, #f2f2f2 50%);
-  /* padding:0; */
 
  
 `;
@@ -13,11 +11,8 @@ export const LoginContent = styled.div`
 
 
 position:absolute;
-/* margin-top:-150px; */
-/* margin-left:-200px; */
 top:50%;
 left:50%;
-
 background: #f9f9f9;
 padding: 50px;
 width: 450px;
@@ -29,20 +24,6 @@ width: 450px;
   -webkit-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54); 
 
-
-
-/*  
- width: 24vw;
-  height: 50vh;
-  background-color: #f9f9f9;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  padding: 50px;
-  box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
-  -webkit-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
-  -moz-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54); */
 `;
 
 export const LoginHeading = styled.h1`
@@ -52,11 +33,8 @@ export const LoginHeading = styled.h1`
   transform: translate(-50%, -500%);
   color: #f2f2f2;
   width:100%;
-  /* font-size: 4em; */
   font-family: "Open Sans", sans-serif;
   font-family: "Pacifico", cursive;
-  /* text-decoration: */
-  /* height:182px; */
   text-align: center;
 `;
 
@@ -68,9 +46,7 @@ export const TopMessage = styled.h1`
     text-align: center;
     margin:16px 0;
     font-size: 26px;
-    /* justify-content: space-between; */
-    /* display:inline; */
-    
+
 `;
 
 export const Divider = styled.hr`
@@ -79,12 +55,9 @@ export const Divider = styled.hr`
 `;
 
 export const Icon = styled.span`
-      
-  /* font-size:40px; */
-  /* width: 100%; */
-
 margin-right:16px;
 `;
+
 export const StyledFormWrapper = styled.div``;
 
 export const StyledForm = styled.form``;
