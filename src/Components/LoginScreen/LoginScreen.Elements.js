@@ -4,7 +4,7 @@ export const LoginContainer = styled.div`
   height: 100vh;
   /* min-height:100vh; */
   background: linear-gradient(180deg, #1c9181 50%, #f2f2f2 50%);
-  padding:0;
+  /* padding:0; */
 
  
 `;
@@ -13,8 +13,8 @@ export const LoginContent = styled.div`
 
 
 position:absolute;
-margin-top:-150px;
-margin-left:-200px;
+/* margin-top:-150px; */
+/* margin-left:-200px; */
 top:50%;
 left:50%;
 
@@ -22,6 +22,15 @@ background-color: #f9f9f9;
 padding: 50px;
 width: 450px;
   height: 500px;
+
+  transform: translate(-50%, -40%);
+  padding: 50px;
+  box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: -7px 6px 15px -7px rgba(0, 0, 0, 0.54); 
+
+
+
 /*  
  width: 24vw;
   height: 50vh;
