@@ -11,9 +11,9 @@ import {
 const SideNav = () => {
   return (
     <>
-      THIS IS THE SIDEBAR
+    
       <TopContainer></TopContainer>
-      
+
       {/* SideBar */}
       {SideBarLinkObjects.map(({ icon, link, rightlink }) => (
         <SideContainer key={link}>
