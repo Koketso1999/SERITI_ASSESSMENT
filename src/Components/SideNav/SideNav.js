@@ -6,17 +6,19 @@ import {
   Links,
   Icons,
   LinkSpan,
-  RightIcon,
+  RightIcon,LinksContainer
 } from "./SideNav.Elements";
 const SideNav = () => {
   return (
     <>
     
-      <TopContainer></TopContainer>
+     
 
       {/* SideBar */}
       {SideBarLinkObjects.map(({ icon, link, rightlink }) => (
         <SideContainer key={link}>
+           <TopContainer>KOKETSO</TopContainer>
+          <LinksContainer>
           <Links>
             <Icons>{icon}</Icons>
             <LinkSpan>
@@ -24,6 +26,7 @@ const SideNav = () => {
               <RightIcon>{rightlink}</RightIcon>
             </LinkSpan>
           </Links>
+          </LinksContainer>
         </SideContainer>
       ))}
     </>

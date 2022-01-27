@@ -7,19 +7,19 @@ padding: 20px 25px;
 border-style: solid;
 `;
 export const SideContainer = styled.section`
- background-color: #f2f2f2;
+ background-color: #010c1c;
   width: 300px;
   height: 100%;
   position: fixed;
-  top: 100;
+  top: 0;
   left: 0;
-  box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  /* transition: 200ms width; */
 
-  padding: 0px 15px;
+  transition: 200ms width; 
+  color:#fff;
+   /* padding: 0px 15px; */
 
 `;
-export const Links = styled.a`
+export const Links = styled.div`
  display: flex;
   align-items: center;
 
@@ -41,4 +41,8 @@ export const LinkSpan = styled.span`
 export const RightIcon = styled.div`
  
 
+`;
+export const LinksContainer = styled.section`
+ 
+ padding: 0px 15px;
 `;

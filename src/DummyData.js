@@ -1,5 +1,5 @@
-import { IoIosSpeedometer,IoDocumentText,IoMdSchool } from "react-icons/io";
-import { FaLaptop, FaChartPie, FaEdit} from "react-icons/fa";
+import { IoIosSpeedometer,IoDocumentText,IoMdSchool,IoDocumentsOutline } from "react-icons/io";
+import { FaLaptop, FaChartPie, FaEdit, FaUsers,FaStar,FaRegThumbsUp} from "react-icons/fa";
 import { MdTableRows} from "react-icons/md";
 import { HiDocumentAdd, HiDocumentText} from "react-icons/hi";
 
@@ -48,5 +48,33 @@ export const SideBarLinkObjects = [
         rightlink:''
 }
     
+]
+
+export const CategoriesObjects = [ 
+    
+    {
+        icon: <IoIosSpeedometer />,
+        category:'Users',
+        number:5
+},
+    
+    {
+        icon: <FaRegThumbsUp />,
+        category:'Likes',
+        number:25
+},
+    
+    {
+        icon: <FaUsers />,
+        category:'Uploads',
+        number:5
+},
+    
+    {
+        icon: <FaStar />,
+        category:'Stars',
+        number:5
+},
 
 ]
+    
