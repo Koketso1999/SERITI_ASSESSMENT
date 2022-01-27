@@ -18,7 +18,7 @@ position:absolute;
 top:50%;
 left:50%;
 
-background-color: #f9f9f9;
+background: #f9f9f9;
 padding: 50px;
 width: 450px;
   height: 500px;
@@ -49,24 +49,28 @@ export const LoginHeading = styled.h1`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -300%);
+  transform: translate(-50%, -500%);
   color: #f2f2f2;
-  font-size: 4em;
+  width:100%;
+  /* font-size: 4em; */
   font-family: "Open Sans", sans-serif;
   font-family: "Pacifico", cursive;
   /* text-decoration: */
+  /* height:182px; */
+  text-align: center;
 `;
 
 export const LoginBox = styled.div`
 
 `;
 
-export const TopMessage = styled.h2`
+export const TopMessage = styled.h1`
     text-align: center;
     margin:16px 0;
     font-size: 26px;
     /* justify-content: space-between; */
     /* display:inline; */
+    
 `;
 
 export const Divider = styled.hr`
