@@ -20,8 +20,8 @@ left:50%;
 
 background-color: #f9f9f9;
 padding: 50px;
-width: 24vw;
-  height: 50vh;
+width: 450px;
+  height: 500px;
 /*  
  width: 24vw;
   height: 50vh;
