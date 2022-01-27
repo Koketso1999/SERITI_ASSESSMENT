@@ -49,9 +49,9 @@ export const LoginHeading = styled.h1`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -400%);
+  transform: translate(-50%, -300%);
   color: #f2f2f2;
-  font-size: 3em;
+  font-size: 4em;
   font-family: "Open Sans", sans-serif;
   font-family: "Pacifico", cursive;
   /* text-decoration: */
@@ -64,7 +64,7 @@ export const LoginBox = styled.div`
 export const TopMessage = styled.h2`
     text-align: center;
     margin:16px 0;
-    font-size: 24px;
+    font-size: 26px;
     /* justify-content: space-between; */
     /* display:inline; */
 `;
