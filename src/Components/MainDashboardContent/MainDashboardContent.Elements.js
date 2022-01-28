@@ -6,7 +6,7 @@ export const MainDashboard = styled.section`
   height: 100vh;
   /* padding: 20px 25px; */
   transition: 400ms margin-left;
-  background: grey;
+  background: #dfdcdc;
 `;
 
 export const TopSection = styled.section`
@@ -15,17 +15,23 @@ export const TopSection = styled.section`
   background: #1c9181;
   height: 40px;
   padding: 10px;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 `;
 
-export const MiniHeader = styled.section``;
+export const MiniHeader = styled.section`
+height:70px;
+background:#fff;
+display: flex;
+  justify-content: space-between;
+`;
 export const CategoryNumber = styled.div``;
 
 export const CategoriesContainer = styled.div`
+  padding:25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 10px 10px;
+  gap: 2px 10px;
   grid-template-areas:
     "Cat-1 Cat-2 Cat-3 Cat-4"
     "Chart-1 Chart-1 Chart-2 Chart-2"
@@ -85,7 +91,7 @@ export const CategoryOne = styled.div`
   display:flex;
   background:#fff;
   border-radius:4px;
-  width:200px;
+  width:240px;
   height:65px
 
 `;
@@ -103,7 +109,7 @@ export const CategoryTwo = styled.div`
   display:flex;
   background:#fff;
   border-radius:4px;
-  width:200px;
+  width:240px;
   height:65px
 
 `;
@@ -113,7 +119,7 @@ export const CategoryThree = styled.div`
   display:flex;
   background:#fff;
   border-radius:4px;
-  width:200px;
+  width:240px;
   height:65px
 
   `;
@@ -123,7 +129,7 @@ export const CategoryFour = styled.div`
   display:flex;
   background:#fff;
   border-radius:4px;
-  width:200px;
+  width:240px;
   height:65px
 
 `;
@@ -131,10 +137,38 @@ export const CategoryFour = styled.div`
 export const CategoryFive = styled.div`
   grid-area: Chart-1;
   height:300px;
+  background:#fff;
+  border-radius:4px;
+  width:500px; 
+  margin-top: -100px;
 `;
 
 export const CategorySix = styled.div`
   grid-area: Chart-2;
+  border-radius:4px;
+  height:300px;
+  background:#fff;
+  width:500px;
+  margin-top: -100px
 `;
 
 export const CategoryText = styled.div``;
+
+export const ChartHeading = styled.h1`
+  font-size:20px;
+  color:#3a2d2d;
+  margin:12px;
+
+`;
+
+export const MiniLeft= styled.div``;
+
+export const MiniRight= styled.div``;
+
+export const LeftTextOne= styled.div``;
+
+export const LeftTextTwo= styled.div``;
+
+export const BreadCrumb= styled.span``;
+
+

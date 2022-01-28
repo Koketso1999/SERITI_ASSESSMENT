@@ -5,13 +5,14 @@ import {
   CategoryText,
   MainDashboard,
   TopSection,
-  MiniHeader,
+  MiniHeader,MiniRight,MiniLeft,
   CategoriesContainer,
   GridContainer,
   GridItem,
   Icon,
-  CategoryLabel,
-  InputBox,
+  CategoryLabel,BreadCrumb,
+  InputBox,LeftTextOne,
+  LeftTextTwo,
   Search,
   RightSection,
   LeftSection,
@@ -20,7 +21,7 @@ import {
   CategoryFour,
   CategoryTwo,
   CategoryFive,
-  CategorySix,
+  CategorySix,ChartHeading
 } from "./MainDashboardContent.Elements";
 import Header from "../Header/Header";
 import { HiMenu } from "react-icons/hi";
@@ -34,8 +35,8 @@ import {
   FaUsers,
   FaStar,
 } from "react-icons/fa";
-import LineChart from "../Charts/LineChart";
 import LineCharts from "../Charts/LineChart";
+import PieCharts from "../Charts/PieCharts";
 
 const MainDashboardContent = () => {
   return (
@@ -94,7 +95,17 @@ const MainDashboardContent = () => {
         </TopSection>
 
         <MiniHeader>
-          <FaHome />
+
+        <MiniLeft>
+
+          <LeftTextOne><IoIosSpeedometer /> Dashboard </LeftTextOne>
+          <LeftTextTwo>Let's see if you can build this </LeftTextTwo>
+        </MiniLeft>
+
+        <MiniRight>
+        <FaHome /> <BreadCrumb>/ Home</BreadCrumb>
+        </MiniRight>
+
         </MiniHeader>
 
         <CategoriesContainer>
@@ -137,10 +148,14 @@ const MainDashboardContent = () => {
             </CategoryText>
           </CategoryFour>
           <CategoryFive>
+              <ChartHeading>Monthly Sales</ChartHeading>
+            
             <LineCharts />
           </CategoryFive>
           <CategorySix>
-            <LineChart />
+          <ChartHeading>Support Requests</ChartHeading>
+
+            <PieCharts />
           </CategorySix>
         </CategoriesContainer>
       </MainDashboard>
