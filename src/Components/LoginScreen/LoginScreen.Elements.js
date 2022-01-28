@@ -36,6 +36,8 @@ export const LoginHeading = styled.h1`
   font-family: "Open Sans", sans-serif;
   font-family: "Pacifico", cursive;
   text-align: center;
+  font-size:36px;
+  
 `;
 
 export const LoginBox = styled.div`
