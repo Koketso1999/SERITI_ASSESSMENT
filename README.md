@@ -1,4 +1,4 @@
-# Getting Started with Create React App by Koketso Morapedi😊
+# Getting Started with SERITI_ASSESSMENT App by Koketso Morapedi😊
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
