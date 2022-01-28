@@ -1,10 +1,17 @@
-# Getting Started with Create React App
+# Getting Started with Create React App by Koketso Morapedi😊
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+NodeJS will be needed in order to run the appliication.
+
+Other technologies used to develop this project are Styled Components, React Icons, React Router.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+This will install all dependencies needed for the successful running of this project.
 
 ### `npm start`
 
