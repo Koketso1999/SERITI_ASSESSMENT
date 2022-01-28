@@ -13,22 +13,23 @@ const SideNav = () => {
     <>
     
      
-
+    <SideContainer>
+           <TopContainer></TopContainer>
       {/* SideBar */}
       {SideBarLinkObjects.map(({ icon, link, rightlink }) => (
-        <SideContainer key={link}>
-           <TopContainer>KOKETSO</TopContainer>
-          <LinksContainer>
+       
+          <LinksContainer  key={link}>
           <Links>
-            <Icons>{icon}</Icons>
+            <Icons style={{color:'#ffff'}}>{icon}</Icons>
             <LinkSpan>
               {link}
               <RightIcon>{rightlink}</RightIcon>
             </LinkSpan>
           </Links>
           </LinksContainer>
-        </SideContainer>
+      
       ))}
+        </SideContainer>
     </>
   );
 };
