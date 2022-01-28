@@ -6,30 +6,31 @@ import {
   Links,
   Icons,
   LinkSpan,
-  RightIcon,LinksContainer
+  RightIcon,
+  LinksContainer,
+  HoverContainer,
 } from "./SideNav.Elements";
 const SideNav = () => {
   return (
     <>
-    
-     
-    <SideContainer>
-           <TopContainer></TopContainer>
-      {/* SideBar */}
-      {SideBarLinkObjects.map(({ icon, link, rightlink }) => (
-       
-          <LinksContainer  key={link}>
-          <Links>
-            <Icons style={{color:'#ffff'}}>{icon}</Icons>
-            <LinkSpan>
-              {link}
-              <RightIcon>{rightlink}</RightIcon>
-            </LinkSpan>
-          </Links>
+      <SideContainer>
+        <TopContainer></TopContainer>
+
+        {/* A mapping function over the list of objects in the DummyData file */}
+        {SideBarLinkObjects.map(({ icon, link, rightlink }) => (
+          <LinksContainer key={link}>
+            <Links>
+              <Icons
+                style={{ color: "#ffff", fontSize: "16px", marginRight: "0" }}
+              >
+                {icon}
+              </Icons>
+              <LinkSpan>{link}</LinkSpan>
+            </Links>
+            <RightIcon>{rightlink}</RightIcon>
           </LinksContainer>
-      
-      ))}
-        </SideContainer>
+        ))}
+      </SideContainer>
     </>
   );
 };

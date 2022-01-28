@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+// Create universal styling across the website
 const GlobalStyle = createGlobalStyle`
 
 * {
@@ -13,10 +14,6 @@ const GlobalStyle = createGlobalStyle`
    body {
      height: 100%;
    }
-
-
   `;
-
-
 
 export default GlobalStyle;

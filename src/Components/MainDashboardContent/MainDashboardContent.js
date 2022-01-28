@@ -1,31 +1,35 @@
 import React from "react";
-import { CategoriesObjects } from "../../DummyData";
 import {
   CategoryNumber,
   CategoryText,
   MainDashboard,
   TopSection,
-  MiniHeader,MiniRight,MiniLeft,
+  MiniHeader,
+  MiniRight,
+  MiniLeft,
   CategoriesContainer,
-  GridContainer,
-  GridItem,
   Icon,
-  CategoryLabel,BreadCrumb,
-  InputBox,LeftTextOne,
+  CategoryLabel,
+  BreadCrumb,
+  InputBox,
+  LeftTextOne,
   LeftTextTwo,
   Search,
   RightSection,
+  IconOne,
+  IconTwo,
+  IconThree,
   LeftSection,
   CategoryOne,
   CategoryThree,
   CategoryFour,
   CategoryTwo,
   CategoryFive,
-  CategorySix,ChartHeading
+  CategorySix,
+  ChartHeading,
 } from "./MainDashboardContent.Elements";
-import Header from "../Header/Header";
-import { HiMenu } from "react-icons/hi";
-import { IoIosSpeedometer } from "react-icons/io";
+import { HiMenu, HiOutlineDocumentText } from "react-icons/hi";
+import { IoIosSpeedometer, IoDocumentsSharp } from "react-icons/io";
 import {
   FaRegBell,
   FaUserAlt,
@@ -41,6 +45,8 @@ import PieCharts from "../Charts/PieCharts";
 const MainDashboardContent = () => {
   return (
     <>
+
+    {/* Dashboard contents */}
       <MainDashboard>
         <TopSection>
           <LeftSection>
@@ -53,14 +59,10 @@ const MainDashboardContent = () => {
                 style={{
                   color: "#332f2f",
                   position: "absolute",
-                  top: "3%",
-                  left: "89%",
-                  fontSize: "14px",
-
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginLeft: " 8px",
+                  top: "2.5%",
+                  left: "90%",
+                  fontSize: "12px",
+                  cursor: "pointer",
                 }}
               />
               <Search type="text" placeholder="Search" />
@@ -68,6 +70,7 @@ const MainDashboardContent = () => {
             <FaRegBell
               style={{
                 color: "#fff",
+                cursor: "pointer",
 
                 fontSize: "18px",
 
@@ -81,6 +84,7 @@ const MainDashboardContent = () => {
             <FaUserAlt
               style={{
                 color: "#fff",
+                cursor: "pointer",
                 marginRight: "24px",
 
                 fontSize: "18px",
@@ -95,47 +99,46 @@ const MainDashboardContent = () => {
         </TopSection>
 
         <MiniHeader>
+          <MiniLeft>
+            <LeftTextOne>
+              <IoIosSpeedometer /> Dashboard
+            </LeftTextOne>
+            <LeftTextTwo>Let's see if you can build this </LeftTextTwo>
+          </MiniLeft>
 
-        <MiniLeft>
-
-          <LeftTextOne><IoIosSpeedometer /> Dashboard </LeftTextOne>
-          <LeftTextTwo>Let's see if you can build this </LeftTextTwo>
-        </MiniLeft>
-
-        <MiniRight>
-        <FaHome /> <BreadCrumb>/ Home</BreadCrumb>
-        </MiniRight>
-
+          <MiniRight>
+            <FaHome /> <BreadCrumb>/ Dashboard</BreadCrumb>
+          </MiniRight>
         </MiniHeader>
 
         <CategoriesContainer>
           <CategoryOne>
-            <Icon>
-              <IoIosSpeedometer />
-            </Icon>
+            <IconOne>
+              <FaUsers />
+            </IconOne>
             <CategoryText>
-              <CategoryLabel>Users</CategoryLabel>
+              <CategoryLabel>USERS</CategoryLabel>
               <CategoryNumber>5</CategoryNumber>
             </CategoryText>
           </CategoryOne>
 
           <CategoryTwo>
-            <Icon>
+            <IconTwo>
               <FaRegThumbsUp />
-            </Icon>
+            </IconTwo>
             <CategoryText>
-              <CategoryLabel>Users</CategoryLabel>
-              <CategoryNumber>5</CategoryNumber>
+              <CategoryLabel>LIKES</CategoryLabel>
+              <CategoryNumber>25</CategoryNumber>
             </CategoryText>
           </CategoryTwo>
 
           <CategoryThree>
-            <Icon>
-              <FaUsers />
-            </Icon>
+            <IconThree>
+              <HiOutlineDocumentText />
+            </IconThree>
             <CategoryText>
-              <CategoryLabel>Uploads</CategoryLabel>
-              <CategoryNumber>5</CategoryNumber>
+              <CategoryLabel>UPLOADS</CategoryLabel>
+              <CategoryNumber>10</CategoryNumber>
             </CategoryText>
           </CategoryThree>
           <CategoryFour>
@@ -143,17 +146,17 @@ const MainDashboardContent = () => {
               <FaStar />
             </Icon>
             <CategoryText>
-              <CategoryLabel>Users</CategoryLabel>
-              <CategoryNumber>5</CategoryNumber>
+              <CategoryLabel>STARS</CategoryLabel>
+              <CategoryNumber>500</CategoryNumber>
             </CategoryText>
           </CategoryFour>
           <CategoryFive>
-              <ChartHeading>Monthly Sales</ChartHeading>
-            
+            <ChartHeading>Monthly Sales</ChartHeading>
+
             <LineCharts />
           </CategoryFive>
           <CategorySix>
-          <ChartHeading>Support Requests</ChartHeading>
+            <ChartHeading>Support Requests</ChartHeading>
 
             <PieCharts />
           </CategorySix>

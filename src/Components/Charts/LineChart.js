@@ -13,6 +13,7 @@ import { data } from "../../DummyData";
 
 const LineCharts = () => {
   return (
+    // Define the charts attributes
     <ResponsiveContainer width="100%" height="80%">
       <LineChart
         width={500}
@@ -25,16 +26,10 @@ const LineCharts = () => {
           bottom: 5,
         }}
       >
-        <CartesianGrid stroke="#f1ebeb"/>
-        <XAxis
-          dataKey="name"
-          tick={{ fill: '#706f77',
-        fontSize:9 }}
-        />
-        <YAxis           tick={{ fill: '#706f77',
-        fontSize:9 }}/>
+        <CartesianGrid stroke="#f1ebeb" />
+        <XAxis dataKey="name" tick={{ fill: "#706f77", fontSize: 9 }} />
+        <YAxis tick={{ fill: "#706f77", fontSize: 9 }} />
         <Tooltip />
-        {/* <Legend /> */}
         <Line
           fill="#a7a6ac"
           type="monotone"

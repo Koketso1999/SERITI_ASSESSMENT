@@ -1,14 +1,13 @@
-import React from 'react';
-import LoginScreen from '../Components/LoginScreen/LoginScreen';
-
+import React from "react";
+import LoginScreen from "../Components/LoginScreen/LoginScreen";
 
 const Login = () => {
-  
-  console.log('Login.js')
-  return <>
-  
+  return (
+    <>
+      {/* Calling all components used to make up the Dashboard */}
       <LoginScreen />
-  </>;
+    </>
+  );
 };
 
 export default Login;

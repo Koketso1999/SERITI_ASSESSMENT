@@ -4,9 +4,9 @@ export const MainDashboard = styled.section`
   margin-left: 250px;
   box-sizing: border-box;
   height: 100vh;
-  /* padding: 20px 25px; */
   transition: 400ms margin-left;
   background: #dfdcdc;
+  overflow: hidden;
 `;
 
 export const TopSection = styled.section`
@@ -15,19 +15,20 @@ export const TopSection = styled.section`
   background: #1c9181;
   height: 40px;
   padding: 10px;
-  /* margin-bottom: 25px; */
 `;
 
 export const MiniHeader = styled.section`
-height:70px;
-background:#fff;
-display: flex;
+  height: 70px;
+  background: #fff;
+  display: flex;
   justify-content: space-between;
+
+  padding: 16px;
 `;
 export const CategoryNumber = styled.div``;
 
 export const CategoriesContainer = styled.div`
-  padding:25px;
+  padding: 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -45,33 +46,63 @@ export const GridContainer = styled.section`
 `;
 
 export const GridItem = styled.div`
-  /* height: 50px;
-  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-  box-sizing: border-box;
-  padding: 50px; */
-
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
 `;
 
 export const Icon = styled.div`
-padding:5%;
-background:red;
-height:100%;
-width:70px;
-font-size:35px;
-
-color:#fff;
+  padding: 5%;
+  background: #c70909;
+  height: 100%;
+  width: 70px;
+  font-size: 35px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: #fff;
 `;
 
-export const CategoryLabel = styled.p``;
+export const IconOne = styled.div`
+  padding: 5%;
+  background: #1c9181;
+  height: 100%;
+  width: 70px;
+  font-size: 35px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: #fff;
+`;
 
+export const IconTwo = styled.div`
+  padding: 5%;
+  background: #37a7c9;
+  height: 100%;
+  width: 70px;
+  font-size: 35px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: #fff;
+`;
+
+export const IconThree = styled.div`
+  padding: 5%;
+  background: #f3d214;
+  height: 100%;
+  width: 70px;
+  font-size: 35px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: #fff;
+`;
+
+export const CategoryText = styled.h1`
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px;
+`;
+export const CategoryLabel = styled.div``;
 export const InputBox = styled.div`
   display: flex;
-  /* justify-content: space-between; */
-  width: 170px;
-  height: 30px;
-  padding: 2px;
+  width: 160px;
+  height: 26px;
 `;
 
 export const Search = styled.input`
@@ -81,19 +112,19 @@ export const Search = styled.input`
   width: 100%;
   padding: 10px;
   text-align: left;
+  cursor: pointer;
   position: static;
-  /* margin-right:20px; */
   height: 100%;
+  background: #e6f0e4;
 `;
 
 export const CategoryOne = styled.div`
   grid-area: Cat-1;
-  display:flex;
-  background:#fff;
-  border-radius:4px;
-  width:240px;
-  height:65px
-
+  display: flex;
+  background: #fff;
+  border-radius: 4px;
+  width: 240px;
+  height: 65px;
 `;
 
 export const RightSection = styled.div`
@@ -102,73 +133,85 @@ export const RightSection = styled.div`
 export const LeftSection = styled.div`
   display: flex;
   justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 `;
 
 export const CategoryTwo = styled.div`
   grid-area: Cat-2;
-  display:flex;
-  background:#fff;
-  border-radius:4px;
-  width:240px;
-  height:65px
-
+  display: flex;
+  background: #fff;
+  border-radius: 4px;
+  width: 240px;
+  height: 65px;
 `;
 
 export const CategoryThree = styled.div`
   grid-area: Cat-3;
-  display:flex;
-  background:#fff;
-  border-radius:4px;
-  width:240px;
-  height:65px
-
-  `;
+  display: flex;
+  background: #fff;
+  border-radius: 4px;
+  width: 240px;
+  height: 65px;
+`;
 
 export const CategoryFour = styled.div`
   grid-area: Cat-4;
-  display:flex;
-  background:#fff;
-  border-radius:4px;
-  width:240px;
-  height:65px
-
+  display: flex;
+  background: #fff;
+  border-radius: 4px;
+  width: 240px;
+  height: 65px;
 `;
 
 export const CategoryFive = styled.div`
   grid-area: Chart-1;
-  height:300px;
-  background:#fff;
-  border-radius:4px;
-  width:500px; 
+  height: 300px;
+  background: #fff;
+  border-radius: 4px;
+  width: 500px;
   margin-top: -100px;
 `;
 
 export const CategorySix = styled.div`
   grid-area: Chart-2;
-  border-radius:4px;
-  height:300px;
-  background:#fff;
-  width:500px;
-  margin-top: -100px
+  border-radius: 4px;
+  height: 300px;
+  background: #fff;
+  width: 500px;
+  margin-top: -100px;
 `;
-
-export const CategoryText = styled.div``;
 
 export const ChartHeading = styled.h1`
-  font-size:20px;
-  color:#3a2d2d;
-  margin:12px;
-
+  font-size: 20px;
+  color: #3a2d2d;
+  margin: 12px;
 `;
 
-export const MiniLeft= styled.div``;
+export const MiniLeft = styled.div`
+  cursor: pointer;
+`;
 
-export const MiniRight= styled.div``;
+export const MiniRight = styled.div`
+  font-size: 11px;
+  margin-top: 12px;
+  cursor: pointer;
+`;
 
-export const LeftTextOne= styled.div``;
+export const LeftTextOne = styled.div`
+  font-size: 20px;
+  font-weight: 600;
+`;
 
-export const LeftTextTwo= styled.div``;
+export const LeftTextTwo = styled.div`
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: cursive;
+`;
 
-export const BreadCrumb= styled.span``;
-
-
+export const BreadCrumb = styled.span`
+  color: #1c9181;
+  font-weight: 600;
+`;
