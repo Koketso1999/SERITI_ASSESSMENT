@@ -6,8 +6,6 @@ export const TopContainer = styled.section`
   padding: 20px 25px;
   background: #197e70;
   height: 40px;
-
-  
 `;
 export const SideContainer = styled.nav`
   background-color: #21262e;

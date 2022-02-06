@@ -34,7 +34,7 @@ export const CategoriesContainer = styled.div`
   grid-template-rows: repeat(4, 1fr);
   gap: 2px 10px;
   grid-template-areas:
-    "Cat-1 Cat-2 Cat-3 Cat-4 "
+    "Cat-1 Cat-2 Cat-3 Cat-4"
     "Chart-1 Chart-1 Chart-2 Chart-2"
     ". . . ."
     ". . . .";
@@ -121,7 +121,6 @@ export const Search = styled.input`
 export const CategoryOne = styled.div`
   grid-area: Cat-1;
   display: flex;
-  /* flex-direction:ro */
   background: #fff;
   border-radius: 4px;
   width: 240px;
@@ -130,7 +129,6 @@ export const CategoryOne = styled.div`
 
 export const RightSection = styled.div`
   display: flex;
-  align-items:center;
 `;
 export const LeftSection = styled.div`
   display: flex;

@@ -71,7 +71,9 @@ const MainDashboardContent = () => {
               style={{
                 color: "#fff",
                 cursor: "pointer",
+
                 fontSize: "18px",
+
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -148,15 +150,14 @@ const MainDashboardContent = () => {
               <CategoryNumber>500</CategoryNumber>
             </CategoryText>
           </CategoryFour>
-
-
           <CategoryFive>
             <ChartHeading>Monthly Sales</ChartHeading>
+
             <LineCharts />
           </CategoryFive>
-
           <CategorySix>
             <ChartHeading>Support Requests</ChartHeading>
+
             <PieCharts />
           </CategorySix>
         </CategoriesContainer>
